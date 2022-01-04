@@ -1,0 +1,14 @@
+package chapter9_exe;
+
+import java.util.Random;
+
+public class ex9_5 {
+	public static void main(String[] args) {
+
+		Random random = new Random(1000);
+		for (int i = 0; i < 50; i++)
+			System.out.print(random.nextInt(100) + " ");
+		System.out.print("\n");
+
+	}
+}
