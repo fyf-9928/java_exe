@@ -1,10 +1,21 @@
-package exe1;
+package chapter2;
+
+import java.util.Scanner;
 
 public class ex3 {
-	public static void main(String[] args){
-		System.out.println("Programming is fun!");
-		System.out.println("Fundamentals First");
-		System.out.println("Problem Driven");
-	}
+	public static void main(String[] arg) {
 
+		Scanner input = new Scanner(System.in);
+
+		System.out.print("Enter three numbers: ");
+
+		double number1 = input.nextDouble();
+		double number2 = input.nextDouble();
+		double number3 = input.nextDouble();
+
+		double average = (number1 + number2 + number3) / 3;
+
+		System.out.println("The average of " + number1 + " " + number2 + " " + number3 + " is " + average);
+
+	}
 }
